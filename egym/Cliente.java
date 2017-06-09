@@ -7,12 +7,17 @@
  */
 public class Cliente
 {
-    private Identidad id;
-    private Descripcion descripcion;
+    private String ci;
     private EstadoCliente estado;
-    public Cliente(Identidad id, Descripcion descripcion, EstadoCliente estado){
-        this.id=id;
-        this.descripcion= descripcion;
+    public Cliente(String ci, EstadoCliente estado){
+        this.ci=ci;
         this.estado= estado;
+    }
+    
+    public String getCI(){
+        return "";
+    }
+    public String entrenar(MaquinasFuerza maquina , double tiempo){
+        return maquina.zonaTrabajadaDelCuerpo();
     }
 }

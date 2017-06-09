@@ -1,0 +1,16 @@
+formula MasaGrasa;
+sexo femenino = 0;
+sexo masculino = 1;
+%DeMasaGrasa = 1,2*(IMC)+0,23*edad(años)-10,8x(sexo)-5,4;
+valores 
+-Mujeres
+--<25% 		Delgadez;
+-->25% && <30%	Normal: 
+-->30% 		ExesoDeGrasaCorporal;
+-Hombres
+--<15% 		Delgadez;
+-->15% && <20%	Normal;
+-->20% 		ExesoDeGrasaCorporal;
+
+IMC = Indice de Masa Corporal
+IMC = Peso(Kg)/Estatura²(mts);

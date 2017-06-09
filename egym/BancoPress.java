@@ -1,18 +1,19 @@
 
 /**
- * Write a description of class Pesas here.
+ * Write a description of class Bicicleta here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pesas extends MaquinasFuerza
-{
+public class BancoPress extends MaquinasFuerza
+{   
     private String zonaDelCuerpo;
-    public Pesas(){
-        zonaDelCuerpo= "Brazos";
+    public BancoPress(){
+        zonaDelCuerpo= "Parte superior del tronco";
     }
     
     public String zonaTrabajadaDelCuerpo(){
         return "";
     }
 }
+

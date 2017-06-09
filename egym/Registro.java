@@ -7,5 +7,18 @@ import java.util.ArrayList;
  */
 public class Registro
 {
-   private ArrayList<Cliente> usuarios; 
-  }
+    private ArrayList<Cliente> usuarios;
+    private ArrayList<String> usuariosCI;
+    public Registro(){
+        usuarios = new ArrayList<Cliente>();
+        usuariosCI = new ArrayList<String>();
+    }
+    
+    public void añadirUsuario(Cliente c){
+
+    }
+    
+    public Cliente buscarCI(String s){
+        return null;
+    }
+}

@@ -1,0 +1,47 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/local/java/jdk1.8.0_121/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/home/cerberus/Programas/bluej/lib/bluejcore.jar:/home/cerberus/Programas/bluej/lib/junit-4.8.2.jar:/home/cerberus/mockito-all-1.10.19.jar:/home/cerberus/Programas/bluej/lib/userlib/pi4j-device.jar:/home/cerberus/Programas/bluej/lib/userlib/pi4j-service.jar:/home/cerberus/Programas/bluej/lib/userlib/pi4j-gpio-extension.jar:/home/cerberus/Programas/bluej/lib/userlib/pi4j-core.jar:/home/cerberus/PrograTest/Progra11/egym
+-d
+/home/cerberus/PrograTest/Progra11/egym/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/home/cerberus/Programas/bluej/lib/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/cerberus/PrograTest/Progra11/egym/Registro.java
+<---- end of javadoc command ---->
+Loading source file /home/cerberus/PrograTest/Progra11/egym/Registro.java...
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:13: error: -> expected
+        usuarios = newArrayList<Cliente>();
+                                          ^
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:13: error: ';' expected
+        usuarios = newArrayList<Cliente>();
+                                           ^
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:14: error: illegal start of expression
+        usuariosCI = newArrayList<String>();
+                   ^
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:14: error: ';' expected
+        usuariosCI = newArrayList<String>();
+                                 ^
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:14: error: illegal start of expression
+        usuariosCI = newArrayList<String>();
+                                         ^
+/home/cerberus/PrograTest/Progra11/egym/Registro.java:14: error: illegal start of expression
+        usuariosCI = newArrayList<String>();
+                                          ^
+6 errors

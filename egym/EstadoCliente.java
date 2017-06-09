@@ -7,10 +7,17 @@
  */
 public class EstadoCliente
 {
-   private String progreso;
-   private String caloriasQuemadas;
-   public EstadoCliente(){
-       progreso= "";
-       caloriasQuemadas="";
+    private double peso , estatura;
+    public EstadoCliente(double peso,double estatura){
+        this.peso=peso;
+        this.estatura=estatura;
+    }
+
+    public double getPeso(){
+        return 0;
+    }
+
+    public double getCalorias(){
+        return 0;
     }
 }

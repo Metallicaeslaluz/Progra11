@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.target=Cliente
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Clientes\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=id\ descripcion\ estado
-comment1.target=Cliente(Identidad,\ Descripcion,\ EstadoCliente)
-numComments=2
+comment0.params=ci\ estado
+comment0.target=Cliente(java.lang.String,\ EstadoCliente)
+comment1.params=
+comment1.target=java.lang.String\ getCI()
+comment2.params=maquina\ tiempo
+comment2.target=java.lang.String\ entrenar(MaquinasFuerza,\ double)
+numComments=3
