@@ -8,13 +8,13 @@
 public class EstadoCliente
 {
    private double peso , estatura;
-   public EstadoCliente(){
-       peso=0;
-       estatura=0;
+   public EstadoCliente(double peso, double estatura){
+       this.peso=peso;
+       this.estatura=estatura;
    
     }
     public double getPeso(){
-        return 0;
+        return peso;
     }
    
 }

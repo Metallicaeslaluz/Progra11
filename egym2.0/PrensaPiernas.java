@@ -14,6 +14,6 @@ public class PrensaPiernas extends MaquinasFuerza
     }
    
     public String zonaTrabajadaDelCuerpo(){
-        return "";
+        return zonaDelCuerpo;
     }
 }

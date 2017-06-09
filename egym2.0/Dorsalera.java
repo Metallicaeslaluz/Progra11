@@ -14,6 +14,6 @@ public class Dorsalera extends MaquinasFuerza
     }
     
     public String zonaTrabajadaDelCuerpo(){
-        return "";
+        return zonaDelCuerpo;
     }
 }

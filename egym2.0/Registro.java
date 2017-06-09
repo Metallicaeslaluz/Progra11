@@ -13,11 +13,24 @@ public class Registro
         usuarios= new ArrayList<Cliente> ();
         usuariosCI=new ArrayList<String> ();
     }
-     public void añadirUsuario(Cliente c){
-
+    public void añadirUsuario(Cliente cliente){
+            usuarios.add(cliente);
+            usuariosCI.add(cliente.getCI());
         }
-    public Cliente buscarCI(String s){
-        
-        return null;
+    public Cliente buscarCI(String ci){
+        boolean res=false;
+        int var=0;
+        for(int i= 0; i<usuariosCI.size();i++){
+            if(usuariosCI.get(i).equals(ci)){
+                res=true;
+                var=i;
+                break;
+            }
+        }
+        if(res){
+            return usuarios.get(var);
+        }else{
+            return null;
+        }
     }
 }

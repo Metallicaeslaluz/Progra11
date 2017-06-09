@@ -12,17 +12,22 @@ public class Sensor
        cliente = null;
        
     }
-    public double calcularCalorias(double tiempo, int MET){
-        double peso= cliente.getPeso();
-        double caloriasQuemadas=  MET * 3.5 * peso/ 200 ;
-        return caloriasQuemadas;
-   }
+   
    public boolean comprobarRegistro(Registro r, String ci){
        boolean res= false;
        if(r.buscarCI(ci)!=null){
+           cliente= r.buscarCI(ci);
            res= true;
         }
        return res;
        
     }
+     public double calcularCalorias(double tiempo, int MET){
+         double caloriasQuemadas=0.0;
+        if(cliente!=null){
+        double peso= cliente.getPeso();
+        caloriasQuemadas=  (MET * 3.5 * peso/ 200) * tiempo ;
+       }
+        return caloriasQuemadas;
+   }
 }

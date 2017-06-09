@@ -14,6 +14,6 @@ public class Pesas extends MaquinasFuerza
     }
     
     public String zonaTrabajadaDelCuerpo(){
-        return "";
+        return zonaDelCuerpo;
     }
 }

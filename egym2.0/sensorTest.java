@@ -11,12 +11,12 @@ import org.junit.Test;
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class pruebaTest
+public class sensorTest
 {
     /**
      * Default constructor for test class pruebaTest
      */
-    public pruebaTest()
+    public sensorTest()
     {
     }
 
@@ -39,20 +39,28 @@ public class pruebaTest
     public void tearDown()
     {
     }
+    //test prueba
     @Test
     public void aaa(){
         Prueba pruebamock = mock(Prueba.class);
         when(pruebamock.getNumero()).thenReturn(4);
         assertEquals(4 , pruebamock.getNumero());
     }
+    //cliente null
     @Test
     public void quemarCalorias(){
+        Registro registroMock= mock(Registro.class);
         Sensor sensor= new Sensor();
         MaquinasFuerza maquina= new Pesas();
-        EstadoCliente estadoC= new EstadoCliente(); 
+        EstadoCliente estadoC= new EstadoCliente(60.0 , 170.1); 
         Cliente cliente= new Cliente("1234" , estadoC);
-        assertEquals(94.5 , cliente.entrenar(maquina , 30.0 , sensor), 0.0);
+        when(registroMock.buscarCI("1234")).thenReturn(null);
+        assertFalse(sensor.comprobarRegistro(registroMock, "1234"));
+        assertEquals(0.0 , cliente.entrenar(maquina , 30.0 , sensor), 0.0);
+        
+        
     }
+    //identificador de usuario
     @Test
     public void otroyyy(){
         Cliente clienteMock= mock(Cliente.class);
@@ -60,5 +68,17 @@ public class pruebaTest
         when(registroMock.buscarCI("1234")).thenReturn(clienteMock);
         Sensor sensor= new Sensor();
         assertTrue(sensor.comprobarRegistro(registroMock, "1234"));
+    }
+    //ciente no null
+    @Test
+    public void quemarCalorias2(){
+        Registro registroMock= mock(Registro.class);
+        Sensor sensor= new Sensor();
+        MaquinasFuerza maquina= new Pesas();
+        EstadoCliente estadoC= new EstadoCliente(60.0 , 170.1); 
+        Cliente cliente= new Cliente("1234" , estadoC);
+        when(registroMock.buscarCI("1234")).thenReturn(cliente);
+        assertTrue(sensor.comprobarRegistro(registroMock, "1234"));
+        assertEquals(94.5 , cliente.entrenar(maquina , 30.0 , sensor), 0.0);
     }
 }

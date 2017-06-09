@@ -14,7 +14,7 @@ public class BancoPress extends MaquinasFuerza
     }
    
     public String zonaTrabajadaDelCuerpo(){
-        return "";
+        return zonaDelCuerpo;
     }
 }
 

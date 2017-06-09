@@ -17,12 +17,13 @@ public class Cliente
     }
     
     public double getPeso(){
-        return 0;
+        double peso= estado.getPeso();
+        return peso;
     }
     public String getCI(){
-        return "";
+        return ci;
     }
     public double entrenar(MaquinasFuerza maquina , double tiempo, Sensor sensor){
-        return sensor.calcularCalorias(tiempo);
+        return sensor.calcularCalorias(tiempo, 3);
     }
 }
