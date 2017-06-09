@@ -2,5 +2,7 @@
 comment0.params=
 comment0.target=BancoPress()
 comment1.params=
-comment1.target=java.lang.String\ zonaTrabajadaDelCuerpo()
-numComments=2
+comment1.target=java.lang.String\ getZonaTrabajada()
+comment2.params=
+comment2.target=java.lang.String\ getNombreMaquina()
+numComments=3

@@ -8,9 +8,12 @@
 public abstract class MaquinasFuerza
 {
     protected Sensor sensor;
+    protected String zonaTrabajada;
     public MaquinasFuerza(){
         sensor = new Sensor();
     }
-    public abstract String zonaTrabajadaDelCuerpo();
+    
+    public abstract String getZonaTrabajada();
+    public abstract String getNombreMaquina();
 }
 

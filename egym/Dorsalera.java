@@ -5,14 +5,19 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Dorsalera extends MaquinasFuerza
-{
-    String zonaDelCuerpo;
-    public Dorsalera(String zonaDelCuerpo){
-        zonaDelCuerpo = "Espalda";
+public class Dorsalera extends MaquinasFuerza{
+    private String nombreMaquina = "Dorsalera";
+    public Dorsalera(){
+        zonaTrabajada = "Espalda";
     }
     
-    public String zonaTrabajadaDelCuerpo(){
+    @Override
+    public String getZonaTrabajada(){
         return "";
+    }
+    
+    @Override
+    public String getNombreMaquina(){
+        return nombreMaquina;
     }
 }

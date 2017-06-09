@@ -40,25 +40,35 @@ public class SensorTest
     {
     }
     
-    
-    //Identificador de usuario caso lista vaciaMOCK
+    //comprobar Identidad existente
     @Test
-    public void xxxxxxxxTest(){
-        Registro regMock = mock(Registro.class);
-        Cliente clienteMock = mock(Cliente.class);
-        when(regMock.buscarCI("12404624")).thenReturn(null);
+    public void aaaaaaaaaaaaTest(){
         Sensor sensor = new Sensor();
-        assertFalse(sensor.comprobarRegistro(regMock,"12404624"));
+        Registro reg = mock(Registro.class);
+        Cliente cliente = mock(Cliente.class);
+        when(reg.buscarCI("12404624")).thenReturn(cliente);
+        assertTrue(sensor.comprobarRegistro(reg,"12404624"));
     }
     
-    //caso no vacia
+    //Calorias qumadas cliente null
     @Test
-    public void xxxxxxx1Test(){
-        Registro regMock = mock(Registro.class);
-        EstadoCliente estate = new EstadoCliente(60,170);
-        Cliente cliente = new Cliente("12404624",estate);
-        when(regMock.buscarCI("12404624")).thenReturn(null);
-        Sensor sensor = new Sensor();
-        assertTrue(sensor.comprobarRegistro(regMock,"12404624"));
+    public void qqqqqqqqqTest(){
+        Registro registroMock= mock(Registro.class);
+        Sensor sensor= new Sensor();
+        when(registroMock.buscarCI("1234")).thenReturn(null);
+        assertFalse(sensor.comprobarRegistro(registroMock, "1234"));
+        assertEquals(0.0 , sensor.calcularCalorias(30.0,3), 0.0);   
+    }
+    
+    //ciente no null
+    @Test
+    public void quemarCalorias2(){
+        Registro registroMock= mock(Registro.class);
+        Sensor sensor= new Sensor();
+        MaquinasFuerza maquina= new Mancuernas(); 
+        Cliente cliente= new Cliente("1234" , 60.0, 170.1);
+        when(registroMock.buscarCI("1234")).thenReturn(cliente);
+        assertTrue(sensor.comprobarRegistro(registroMock, "1234"));
+        assertEquals(94.5 , sensor.calcularCalorias(30.0,3), 0.0);
     }
 }

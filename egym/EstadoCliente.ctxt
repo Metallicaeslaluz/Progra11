@@ -4,5 +4,5 @@ comment0.target=EstadoCliente(double,\ double)
 comment1.params=
 comment1.target=double\ getPeso()
 comment2.params=
-comment2.target=double\ getCalorias()
+comment2.target=double\ getEstatura()
 numComments=3

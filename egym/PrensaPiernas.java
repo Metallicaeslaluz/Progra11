@@ -7,12 +7,17 @@
  */
 public class PrensaPiernas extends MaquinasFuerza
 {
-    String zonaDelCuerpo;
+    private String nombreMaquina = "Prensa de Piernas";
     public PrensaPiernas(String zonaDelCuerpo){
-        zonaDelCuerpo = "Piernas";
+        zonaTrabajada = "Piernas";
     }
 
-    public String zonaTrabajadaDelCuerpo(){
+    public String getZonaTrabajada(){
         return "";
+    }
+    
+    @Override
+    public String getNombreMaquina(){
+        return nombreMaquina;
     }
 }

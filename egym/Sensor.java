@@ -10,7 +10,46 @@ public class Sensor{
     public Sensor(){
         cliente = null;
     }
+       
+    public boolean comprobarRegistro(Registro r,String ci){  
+        boolean res = false;
+        cliente = r.buscarCI(ci);
+        if(cliente != null)
+            res = true;
+        return res;
+    }
+    
+    public double calcularCalorias(double tiempo,int MET){
+        double caloriasQuemadas = 0.0;
+        if(cliente!=null){
+            double peso= cliente.getPeso();
+            caloriasQuemadas=  (MET * 3.5 * peso/ 200) * tiempo ;
+        }
+        return caloriasQuemadas;
+    }
+}
+    
+    
+    
+    
 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
     public boolean comprobarRegistro(Registro r,String ci){;  
         boolean res = false;
         cliente = r.buscarCI(ci);
@@ -18,12 +57,11 @@ public class Sensor{
             res = true;
         return res;
     }
-
+    /*
     public double calcularCalorias(double tiempo){
         return 0.0;
     }
 
     public void logout(){
         cliente = null;
-    }
-}
+    }*/

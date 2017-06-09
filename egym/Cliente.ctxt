@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=ci\ estado
-comment0.target=Cliente(java.lang.String,\ EstadoCliente)
+comment0.params=ci\ peso\ estatura
+comment0.target=Cliente(java.lang.String,\ double,\ double)
 comment1.params=
-comment1.target=java.lang.String\ getCI()
-comment2.params=maquina\ tiempo
-comment2.target=java.lang.String\ entrenar(MaquinasFuerza,\ double)
-numComments=3
+comment1.target=double\ getPeso()
+comment2.params=
+comment2.target=double\ getAltura()
+comment3.params=
+comment3.target=java.lang.String\ getCI()
+numComments=4

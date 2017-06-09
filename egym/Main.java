@@ -7,6 +7,5 @@ import java.util.ArrayList;
  */
 public class Main{
     private Registro miRegistro;
-    private Entrenador entrenador;
     private ArrayList<MaquinasFuerza> maquinas;
 }
