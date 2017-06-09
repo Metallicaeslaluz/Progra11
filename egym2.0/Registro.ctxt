@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Registro
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Registro\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Registro()
+comment2.params=c
+comment2.target=void\ a\u00F1adirUsuario(Cliente)
+comment3.params=s
+comment3.target=Cliente\ buscarCI(java.lang.String)
+numComments=4
